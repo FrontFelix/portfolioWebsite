@@ -1,5 +1,4 @@
 "use client";
-import { HiOutlineFire } from "react-icons/hi";
 import { SiBuildkite, SiApachenetbeanside, SiAwsfargate } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -94,7 +93,7 @@ export default function Work() {
             animate={inView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.3, delay: 0.3 }}
-            className="workBox mx-auto lg:mx-0 bg-blue-50 flex-col justify-between flex p-8 text-primary-black rounded bg-white"
+            className="workBox mx-auto lg:mx-0 flex-col justify-between flex p-8 text-primary-black rounded"
           >
             <div className="flex justify-between">
               <h2 className="text-xl">Databas</h2>

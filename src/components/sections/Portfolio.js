@@ -15,7 +15,7 @@ export default function Portfolio() {
     hidden: { opacity: 0, x: -80 },
   };
 
-  const [projects, setProjects] = useState([
+  const projects = [
     {
       category: ["Backend"],
       github: "https://github.com/FrontFelix/projektarbete-backend",
@@ -51,7 +51,7 @@ export default function Portfolio() {
       github: "none",
       image: "./frontend5.png",
     },
-  ]);
+  ];
   const frontendProjects = projects.filter((project) =>
     project.category.includes("Frontend")
   );
@@ -66,7 +66,10 @@ export default function Portfolio() {
   const [category, setCategory] = useState("all");
   return (
     <div className=" background-lines flex flex-col justify-center">
-      <div id="portfolio" className="container-small-width w-full text-left text-white px-8 lg:px-8 xl:px-0">
+      <div
+        id="portfolio"
+        className="container-small-width w-full text-left text-white px-8 lg:px-8 xl:px-0"
+      >
         <motion.h1
           variants={textVariants}
           animate={inView ? "visible" : "hidden"}
@@ -157,7 +160,11 @@ export default function Portfolio() {
                   >
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </div>
                     ) : (
                       <a
@@ -166,8 +173,13 @@ export default function Portfolio() {
                         }
                         href={project.github}
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </a>
                     )}
                   </motion.div>
@@ -187,7 +199,11 @@ export default function Portfolio() {
                   <div className="project-box flex flex-col gap-2">
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </div>
                     ) : (
                       <a
@@ -196,8 +212,13 @@ export default function Portfolio() {
                         }
                         href={project.github}
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </a>
                     )}
                   </div>
@@ -217,7 +238,11 @@ export default function Portfolio() {
                   <div className="project-box flex flex-col gap-2">
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </div>
                     ) : (
                       <a
@@ -226,8 +251,13 @@ export default function Portfolio() {
                         }
                         href={project.github}
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </a>
                     )}
                   </div>
@@ -241,13 +271,17 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-wrap gap-4 my-4 content-baseline"
+                className="flex flex-col gap-4 my-4 content-baseline"
               >
                 {fullstackProjects.map((project) => (
-                  <div className="half-height project-box flex flex-col gap-2">
+                  <div className="project-box flex flex-col gap-2">
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </div>
                     ) : (
                       <a
@@ -256,8 +290,13 @@ export default function Portfolio() {
                         }
                         href={project.github}
                         target="_blank"
+                        rel="noreferrer"
                       >
-                        <img className="object-cover" src={project.image} />
+                        <img
+                          alt="project image"
+                          className="object-cover"
+                          src={project.image}
+                        />
                       </a>
                     )}
                   </div>

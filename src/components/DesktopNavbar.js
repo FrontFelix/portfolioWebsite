@@ -131,6 +131,7 @@ export default function DesktopNavbar() {
                   className="icon-links"
                   href="https://www.linkedin.com/in/felix-bakkum-252b26192/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <AiFillLinkedin size={"2rem"} />
                 </a>
@@ -138,6 +139,7 @@ export default function DesktopNavbar() {
                   className="icon-links"
                   href="https://github.com/FrontFelix"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <AiFillGithub size={"2rem"} />
                 </a>

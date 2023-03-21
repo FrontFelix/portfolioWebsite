@@ -14,7 +14,7 @@ export default function Reviews() {
     hidden: { opacity: 0, x: -80 },
   };
 
-  const [revs, setRevs] = useState([
+  const revs = [
     {
       name: "Mikael Gustafsson",
       role: "Arkitekt/Utvecklare/Co-founder Garrison West",
@@ -43,7 +43,7 @@ export default function Reviews() {
         inklusive back-end utveckling. 
         Med sin positiva inställning och en vilja att ta sig an nya utmaningar, är Felix en duktig utvecklare.`,
     },
-  ]);
+  ];
   return (
     <div
       id="recommendations"
