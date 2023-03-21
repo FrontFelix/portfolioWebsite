@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import {
-  AiFillLinkedin,
-  AiFillTwitterSquare,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export default function DesktopNavbar() {
   const [animation, setAnimation] = useState("closed");

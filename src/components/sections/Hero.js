@@ -47,9 +47,6 @@ export default function Hero() {
           <p>Träffas på kaffe ? </p>
           <AiOutlineCoffee aria-label="icon" />
         </motion.a>
-        <div className="flex">
-          <a></a>
-        </div>
       </div>
       <div className="w-auto lg:w-auto">
         <div className="relative flex justify-center lg:justify-end">
