@@ -133,7 +133,7 @@ export default function DesktopNavbar() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <AiFillLinkedin size={"2rem"} />
+                  <AiFillLinkedin aria-label="icon" size={"2rem"} />
                 </a>
                 <a
                   className="icon-links"
@@ -141,7 +141,7 @@ export default function DesktopNavbar() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <AiFillGithub size={"2rem"} />
+                  <AiFillGithub aria-label="icon" size={"2rem"} />
                 </a>
               </div>
             </li>

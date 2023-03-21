@@ -45,7 +45,7 @@ export default function Hero() {
           href="#contact"
         >
           <p>Träffas på kaffe ? </p>
-          <AiOutlineCoffee />
+          <AiOutlineCoffee aria-label="icon" />
         </motion.a>
         <div className="flex">
           <a></a>
@@ -69,7 +69,7 @@ export default function Hero() {
           />
           <motion.img
             className="w-2/3 lg:w-1/2 md:w-1/3  block mx-auto lg:mx-0 rounded"
-            alt="profile picture"
+            alt="me,myslef & i"
             src="./me.jpg"
           />
         </div>

@@ -57,10 +57,10 @@ export default function Work() {
           >
             <div className="flex justify-between">
               <h2 className="text-xl">Frontend</h2>
-              <BiCodeCurly size={"1.5rem"} />
+              <BiCodeCurly aria-label="icon" size={"1.5rem"} />
             </div>
             <div>
-              <SiBuildkite size={"6rem"} />
+              <SiBuildkite aria-label="icon" size={"6rem"} />
             </div>
             <div>
               <h1 className="text-xl">
@@ -77,10 +77,10 @@ export default function Work() {
           >
             <div className="flex justify-between items-center">
               <h2 className="text-xl">Backend</h2>
-              <BiCodeCurly size={"1.5rem"} />
+              <BiCodeCurly aria-label="icon" size={"1.5rem"} />
             </div>
             <div>
-              <SiApachenetbeanside size={"6rem"} />
+              <SiApachenetbeanside aria-label="icon" size={"6rem"} />
             </div>
             <div>
               <h1 className="text-xl">
@@ -97,10 +97,10 @@ export default function Work() {
           >
             <div className="flex justify-between">
               <h2 className="text-xl">Databas</h2>
-              <BiCodeCurly size={"1.5rem"} />
+              <BiCodeCurly aria-label="icon" size={"1.5rem"} />
             </div>
             <div>
-              <SiAwsfargate size={"6rem"} />
+              <SiAwsfargate aria-label="icon" size={"6rem"} />
             </div>
             <div>
               <h1 className="text-xl">

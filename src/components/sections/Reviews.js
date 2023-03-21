@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import { MdFormatQuote } from "react-icons/md";
 export default function Reviews() {

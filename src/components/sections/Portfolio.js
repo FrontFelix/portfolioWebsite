@@ -161,7 +161,7 @@ export default function Portfolio() {
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -176,7 +176,7 @@ export default function Portfolio() {
                         rel="noreferrer"
                       >
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -200,7 +200,7 @@ export default function Portfolio() {
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -215,7 +215,7 @@ export default function Portfolio() {
                         rel="noreferrer"
                       >
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -239,7 +239,7 @@ export default function Portfolio() {
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -254,7 +254,7 @@ export default function Portfolio() {
                         rel="noreferrer"
                       >
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -278,7 +278,7 @@ export default function Portfolio() {
                     {project.github === "none" ? (
                       <div className="image-pointer-block">
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
@@ -293,7 +293,7 @@ export default function Portfolio() {
                         rel="noreferrer"
                       >
                         <img
-                          alt="project image"
+                          alt="project..."
                           className="object-cover"
                           src={project.image}
                         />
