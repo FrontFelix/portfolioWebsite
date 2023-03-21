@@ -1,4 +1,5 @@
 "use client";
+
 import { SiBuildkite, SiApachenetbeanside, SiAwsfargate } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 
@@ -53,7 +54,7 @@ export default function Work() {
             initial="hidden"
             variants={variants}
             transition={{ duration: 0.3, delay: 0.1 }}
-            className="workBox mx-auto lg:mx-0 bg-blue-50 flex-col justify-between flex p-8 text-white rounded bg-darker-primary"
+            className="workBox mx-auto lg:mx-0 flex-col justify-between flex p-8 text-white rounded bg-darker-primary"
           >
             <div className="flex justify-between">
               <h2 className="text-xl">Frontend</h2>
@@ -73,7 +74,7 @@ export default function Work() {
             animate={inView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="workBox mx-auto lg:mx-0 bg-blue-50 flex-col justify-between flex p-8 text-primary-black rounded bg-primary"
+            className="workBox mx-auto lg:mx-0 flex-col justify-between flex p-8 text-primary-black rounded bg-primary"
           >
             <div className="flex justify-between items-center">
               <h2 className="text-xl">Backend</h2>
@@ -93,7 +94,7 @@ export default function Work() {
             animate={inView ? "visible" : "hidden"}
             variants={variants}
             transition={{ duration: 0.3, delay: 0.3 }}
-            className="workBox mx-auto lg:mx-0 flex-col justify-between flex p-8 text-primary-black rounded"
+            className="workBox mx-auto lg:mx-0  flex-col justify-between flex p-8 text-primary-black rounded bg-white"
           >
             <div className="flex justify-between">
               <h2 className="text-xl">Databas</h2>
