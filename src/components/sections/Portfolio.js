@@ -35,7 +35,7 @@ export default function Portfolio() {
     {
       category: ["Frontend"],
       github: "none",
-      image: "./frontend9.png",
+      image: "./frontend10.png",
     },
     {
       category: ["Frontend"],
