@@ -183,6 +183,7 @@ export default function Contact() {
             />
           </div>
           <motion.button
+            whileHover={{scale: 1.05, transition: { duration: .2}}}
             variants={variants}
             animate={inView ? "visible" : "hidden"}
             transition={{ duration: 0.3, delay: 0.6 }}

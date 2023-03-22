@@ -49,6 +49,7 @@ export default function Work() {
       <div className="flex-col xl:flex-row justify-between">
         <div className="flex flex-col md:flex-row gap-8">
           <motion.div
+          whileHover={{scale: 1.05, transition: { duration: .2}}}
             ref={ref}
             animate={inView ? "visible" : "hidden"}
             initial="hidden"
@@ -70,6 +71,7 @@ export default function Work() {
             </div>
           </motion.div>
           <motion.div
+          whileHover={{scale: 1.05, transition: { duration: .2}}}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
@@ -90,6 +92,7 @@ export default function Work() {
             </div>
           </motion.div>
           <motion.div
+          whileHover={{scale: 1.05, transition: { duration: .2}}}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
