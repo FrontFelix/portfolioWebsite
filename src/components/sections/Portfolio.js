@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
+import ProjectContent from "../ProjectContent";
 
 export default function Portfolio() {
   const ref = useRef(null);
@@ -152,37 +153,7 @@ export default function Portfolio() {
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {projects.map((project, index) => (
-                  <motion.div
-                    variants={variants}
-                    animate={inView ? "visible" : "hidden"}
-                    transition={{ duration: 0.3, delay: index * 0.05 + 0.3 }}
-                    className="project-box w-full lg:w-96 md:w-2/5 flex flex-col gap-2 h-60"
-                  >
-                    {project.github === "none" ? (
-                      <div className="image-pointer-block">
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </div>
-                    ) : (
-                      <a
-                        className={
-                          project.github === "none" ? "image-pointer-block" : ""
-                        }
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </a>
-                    )}
-                  </motion.div>
+                  <ProjectContent inView={inView} project={project} index={index} />
                 ))}
               </motion.div>
             )}
@@ -195,33 +166,8 @@ export default function Portfolio() {
                 exit={{ y: 80, opacity: 0 }}
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
-                {frontendProjects.map((project) => (
-                  <div className="project-box flex flex-col gap-2">
-                    {project.github === "none" ? (
-                      <div className="image-pointer-block">
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </div>
-                    ) : (
-                      <a
-                        className={
-                          project.github === "none" ? "image-pointer-block" : ""
-                        }
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </a>
-                    )}
-                  </div>
+                {frontendProjects.map((project, index) => (
+                  <ProjectContent inView={inView} project={project} index={index} />
                 ))}
               </motion.div>
             )}
@@ -234,33 +180,8 @@ export default function Portfolio() {
                 exit={{ y: 80, opacity: 0 }}
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
-                {backendProjects.map((project) => (
-                  <div className="project-box flex flex-col gap-2">
-                    {project.github === "none" ? (
-                      <div className="image-pointer-block">
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </div>
-                    ) : (
-                      <a
-                        className={
-                          project.github === "none" ? "image-pointer-block" : ""
-                        }
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </a>
-                    )}
-                  </div>
+                {backendProjects.map((project, index) => (
+                  <ProjectContent inView={inView} project={project} index={index} />
                 ))}
               </motion.div>
             )}
@@ -271,35 +192,10 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex flex-col gap-4 my-4 content-baseline"
+                className="flex md:flex-row flex-col gap-4 my-4 content-baseline"
               >
-                {fullstackProjects.map((project) => (
-                  <div className="project-box flex flex-col gap-2">
-                    {project.github === "none" ? (
-                      <div className="image-pointer-block">
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </div>
-                    ) : (
-                      <a
-                        className={
-                          project.github === "none" ? "image-pointer-block" : ""
-                        }
-                        href={project.github}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img
-                          alt="project..."
-                          className="object-cover"
-                          src={project.image}
-                        />
-                      </a>
-                    )}
-                  </div>
+                {fullstackProjects.map((project, index) => (
+                  <ProjectContent inView={inView} project={project} index={index} />
                 ))}
               </motion.div>
             )}
