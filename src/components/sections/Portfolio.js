@@ -25,7 +25,7 @@ export default function Portfolio() {
     {
       category: ["Frontend", "Backend"],
       github: "none",
-      image: "./fullstack2.png",
+      image: "./fullstack3.png",
     },
     {
       category: ["Frontend"],
@@ -35,12 +35,12 @@ export default function Portfolio() {
     {
       category: ["Frontend"],
       github: "none",
-      image: "./frontend3.png",
+      image: "./frontend9.png",
     },
     {
       category: ["Frontend"],
       github: "none",
-      image: "./frontend4.png",
+      image: "./frontend8.png",
     },
     {
       category: ["Frontend"],
