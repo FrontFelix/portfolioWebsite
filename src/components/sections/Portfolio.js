@@ -6,11 +6,6 @@ export default function Portfolio() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
-  const variants = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 80 },
-  };
-
   const textVariants = {
     visible: { opacity: 1, x: 0 },
     hidden: { opacity: 0, x: -80 },
