@@ -25,7 +25,7 @@ export default function Portfolio() {
     {
       category: ["Frontend", "Backend"],
       github: "none",
-      image: "./fullstack2.PNG",
+      image: "./fullstack3.png",
     },
     {
       category: ["Frontend"],
@@ -35,12 +35,12 @@ export default function Portfolio() {
     {
       category: ["Frontend"],
       github: "none",
-      image: "./frontend3.png",
+      image: "./frontend10.png",
     },
     {
       category: ["Frontend"],
       github: "none",
-      image: "./frontend4.png",
+      image: "./frontend8.png",
     },
     {
       category: ["Frontend"],
@@ -148,7 +148,11 @@ export default function Portfolio() {
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {projects.map((project, index) => (
-                  <ProjectContent inView={inView} project={project} index={index} />
+                  <ProjectContent
+                    inView={inView}
+                    project={project}
+                    index={index}
+                  />
                 ))}
               </motion.div>
             )}
@@ -162,7 +166,11 @@ export default function Portfolio() {
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {frontendProjects.map((project, index) => (
-                  <ProjectContent inView={inView} project={project} index={index} />
+                  <ProjectContent
+                    inView={inView}
+                    project={project}
+                    index={index}
+                  />
                 ))}
               </motion.div>
             )}
@@ -176,7 +184,11 @@ export default function Portfolio() {
                 className="half-height flex flex-wrap gap-4 my-4 content-baseline"
               >
                 {backendProjects.map((project, index) => (
-                  <ProjectContent inView={inView} project={project} index={index} />
+                  <ProjectContent
+                    inView={inView}
+                    project={project}
+                    index={index}
+                  />
                 ))}
               </motion.div>
             )}
@@ -190,7 +202,11 @@ export default function Portfolio() {
                 className="flex md:flex-row flex-col gap-4 half-height my-4 content-baseline"
               >
                 {fullstackProjects.map((project, index) => (
-                  <ProjectContent inView={inView} project={project} index={index} />
+                  <ProjectContent
+                    inView={inView}
+                    project={project}
+                    index={index}
+                  />
                 ))}
               </motion.div>
             )}

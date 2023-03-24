@@ -30,7 +30,7 @@ export default function Hero() {
           mig till en skicklig utvecklare med öga för detaljer.
         </motion.p>
         <motion.a
-          whileHover={{scale: 1.05, transition: { duration: .2}}}
+          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           className="flex items-center gap-4 bg-primary md:w-1/2 w-2/3 mx-auto lg:mx-0 lg:w-1/3 justify-center py-1 rounded text-primary-black"
           initial={{ x: 100, opacity: 0 }}
           animate={{
@@ -45,7 +45,7 @@ export default function Hero() {
           }}
           href="#contact"
         >
-          <p>Träffas på kaffe ? </p>
+          <p>Ses på kaffe ? </p>
           <AiOutlineCoffee aria-label="icon" />
         </motion.a>
       </div>
