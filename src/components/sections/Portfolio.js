@@ -187,7 +187,7 @@ export default function Portfolio() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 80, opacity: 0 }}
-                className="flex md:flex-row flex-col gap-4 half-height  my-4 content-baseline"
+                className="flex md:flex-row flex-col gap-4 half-height my-4 content-baseline"
               >
                 {fullstackProjects.map((project, index) => (
                   <ProjectContent inView={inView} project={project} index={index} />

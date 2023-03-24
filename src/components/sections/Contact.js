@@ -160,7 +160,7 @@ export default function Contact() {
               animate={inView ? "visible" : "hidden"}
               transition={{ duration: 0.3, delay: 0.5 }}
               id="company"
-              placeholder="Fully Studios"
+              placeholder="Felix Studios"
               className="bg-transparent contact-input outline-none"
             />
           </div>
