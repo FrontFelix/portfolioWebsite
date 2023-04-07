@@ -1,26 +1,24 @@
-import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css'; 
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Contact from "./components/sections/Contact";
-import Hero from "./components/sections/Hero";
-import Portfolio from "./components/sections/Portfolio";
-import Reviews from "./components/sections/Reviews";
-import Work from "./components/sections/Work";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Easter from "./pages/Easter";
 
 function App() {
   return (
     <div className="app">
-      <ToastContainer />
-      <div className="flex flex-col gap-12 lg:gap-60 py-12">
-      <Navbar />
-      <Hero />
-      <Work />
-      <Portfolio />
-      <Reviews />
-      <Contact />
-
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage />}
+          />
+          <Route
+            path="/easter"
+            element={<Easter />}
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
