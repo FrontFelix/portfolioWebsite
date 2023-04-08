@@ -9,9 +9,9 @@ export default function Easter() {
       }}
       className="easter-bg px-10"
     >
-      <div className="items-center flex flex-col lg:flex-row justify-center lg:gap-12 gap-2 lg:w-3/5">
+      <div className="items-center flex flex-col xl:flex-row justify-center lg:gap-12 gap-2 lg:w-3/5">
         <img
-          className="w-3/5 md:w-1/3 lg:w-full mx-auto"
+          className="w-full mx-auto"
           src="./markusbg.png"
         />
         <div className="text-center lg:text-left">
